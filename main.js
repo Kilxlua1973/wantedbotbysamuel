@@ -1,1 +1,1 @@
-Wantedbot
+const Wantedbot
