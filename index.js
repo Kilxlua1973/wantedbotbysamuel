@@ -93,20 +93,15 @@ async function connectBot() {
         logger: pino({ level: "silent" })
     });
 
-    // Wenn Bot noch nicht registriert, Pairing-Code
     if (!sock.authState.creds.registered) {
         let phoneNumber = await question(gradient("#ff0000", "#C00000")("📲 Deine Nummer (inkl. Ländervorwahl, z.B. +49123456789): "));
         phoneNumber = phoneNumber.replace(/[^0-9]/g, "");
 
-        // Device-ID beliebig
         let code = await sock.requestPairingCode(phoneNumber, "AAAAAAAA");
         code = code?.match(/.{1,4}/g)?.join("-") || code;
         console.log(gradient("#ff0000", "#C00000")("🔑 Pairing Code: " + code));
     }
 
-    //=========================//
-    // EVENTS
-    //=========================//
     sock.ev.on("connection.update", (update) => {
         const { connection } = update;
         if (connection === "close") {
@@ -114,6 +109,8 @@ async function connectBot() {
             setTimeout(connectBot, 5000);
         } else if (connection === "open") {
             console.log(chalk.green("✅ ᭙ꪖ᭢ᡶꫀᦔꪖకꪖ Verbunden mit WhatsApp!"));
+            console.log(chalk.green("-----------------------------------------"));
+            console.log(chalk.yellowBright("⚡᭙ꪖ᭢ᡶꫀᦔꪖకꪖ Bot-Prefix: " + botConfig.prefix));
 
             loadAutoMessages(sock);
         }
@@ -176,7 +173,6 @@ sock.ev.on('messages.upsert', async ({ messages, type }) => {
         const sender = msg.key.participant || from;
         const id = msg.key.id;
 
-        // Cache für Gruppen
         if (isGroup(from)) {
             if (!messageCache[from]) messageCache[from] = {};
             messageCache[from][id] = {
@@ -224,7 +220,6 @@ if (isGroupChat && botConfig.autoReadGroups) {
         }
     }
 
-        // Nachrichtentext für Logging
         let text = "";
         if (msg.message?.conversation) text = msg.message.conversation;
         else if (msg.message?.extendedTextMessage?.text) text = msg.message.extendedTextMessage.text;
