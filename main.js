@@ -1657,7 +1657,7 @@ const { state, saveCreds } = await useMultiFileAuthState('auth_info');
 async function restartBot() {
   const { state } = await useMultiFileAuthState('auth_info');
 }
-
+const { state, saveCreds } = await useMultiFileAuthState('auth_info');
 sock.ev.on('creds.update', saveCreds);
 restartBot();
 }
