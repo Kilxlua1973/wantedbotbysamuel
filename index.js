@@ -152,7 +152,7 @@ sock.ev.on('call', async (call) => {
             }
 
             await sock.sendMessage(from, {
-                text: `🚫 Anruf automatisch abgelehnt.\nBitte schreibe stattdessen eine Nachricht.`
+                text: `🚫 Anruf automatisch abgelehnt.\nBitte schreibe stattdessen eine Nachricht sonst kannst du meine eier lecken und lass mich inruhe.`
             });
 
         } catch (err) {
