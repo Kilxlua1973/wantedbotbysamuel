@@ -1624,8 +1624,10 @@ export async function handleGroupParticipants(sock, update) {
         }
     }
 }
-const makeWASocket = require('@angstvorfrauen/baileys').default;
-
+import { default as makeWASocket } from '@angstvorfrauen/baileys';
+// OR
+import baileys from '@angstvorfrauen/baileys';
+const makeWASocket = baileys.default;
 async function restartBot() {
   // Alte Verbindung beenden
   sock.end();
