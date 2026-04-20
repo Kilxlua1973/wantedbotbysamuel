@@ -1636,3 +1636,4 @@ async function restartBot() {
 }
 
 restartBot();
+}
