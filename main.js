@@ -1648,7 +1648,6 @@ export async function handleGroupParticipants(sock, update) {
         }
     }
 
-import makeWASocket, { useMultiFileAuthState, DisconnectReason } from '@angstvorfrauen/baileys';
 
 async function startBot() {
   console.log("🚀 Starte Bot...");
