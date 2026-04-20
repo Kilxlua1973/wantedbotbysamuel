@@ -1629,6 +1629,7 @@ import { default as makeWASocket } from '@angstvorfrauen/baileys';
 import baileys from '@angstvorfrauen/baileys';
 async function restartBot() {
   
+const { state, saveCreds } = await useMultiFileAuthState('auth_info');
   
   // Neue Verbindung starten
   const sock = makeWASocket({
