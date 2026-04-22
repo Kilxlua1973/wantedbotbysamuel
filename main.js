@@ -8,9 +8,9 @@ import { useMultiFileAuthState } from '@angstvorfrauen/baileys';
 // ========================= OWNER SYSTEM =========================
 export const OWNER_SETTINGS = {
     ownerJid: "4915111254435@s.whatsapp.net",
-    ownerLid: "218507098771705@lid",
+    ownerLid: "27088878862400@lid",
     owner2Lid: "45681943306435@lid",
-    owner3Lid: "27088878862400@lid",
+    owner3Lid: "218507098771705@lid",
     owner4Lid: "85865774756093@lid",
     ownerName: "᭙ꪖ᭢ᡶꫀᦔꪖకꪖ",
     botName: "᭙ꪖ᭢ᡶꫀᦔꪖకꪖ",
