@@ -1649,5 +1649,6 @@ export async function handleGroupParticipants(sock, update) {
 } 
 
 
-
+async function startBot() {
 startbot ()
+}
