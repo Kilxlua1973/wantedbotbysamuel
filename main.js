@@ -486,6 +486,7 @@ client.on("message", async (message) => {
     );
   }
 });
+-
     if (command === "menu") {
         return reply(sock, msg,
 `╔═══『 📃 ${OWNER_SETTINGS.botName} 』 ══╗
