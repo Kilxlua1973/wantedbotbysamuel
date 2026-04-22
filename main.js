@@ -1708,4 +1708,3 @@ async function startBot() {
 
 // Start
 startBot();
-}
