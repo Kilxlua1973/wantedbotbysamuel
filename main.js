@@ -1646,31 +1646,8 @@ export async function handleGroupParticipants(sock, update) {
             });
         }
     }
-} // ✅ Funktion richtig geschlossen
+} 
 
 
-// ✅ Array richtig definieren
-const fights = [
-  "hat {target} mit einem Kissen getroffen 🛏️",
-  "hat {target} mit einer Wasserpistole nass gemacht 💦",
-  "hat {target} im Duell besiegt ⚔️",
-  "hat {target} ausgetrickst 🤹"
-];
 
-
-// ✅ Event richtig geschlossen
-sock.ev.on("messages.upsert", async ({ messages }) => {
-    const message = messages[0];
-    if (!message.message) return; message.reply("Markiere jemanden für ein Duell!");
-    },
-
-const target = await client.getContactById(mentioned);
-    const action = fights[Math.floor(Math.random() * fights.length)];
-
-    message.reply(
-      message._data.notifyName + " " +
-      action.replace("{target}", target.pushname || "jemand")
-    );
-  }
-});
 startbot ()
