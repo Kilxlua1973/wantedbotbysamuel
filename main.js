@@ -1662,7 +1662,7 @@ const fights = [
 sock.ev.on("messages.upsert", async ({ messages }) => {
     const message = messages[0];
     if (!message.message) return; message.reply("Markiere jemanden für ein Duell!");
-    }
+    },
 
     const target = await client.getContactById(mentioned);
     const action = fights[Math.floor(Math.random() * fights.length)];
