@@ -468,7 +468,7 @@ if (command === "public") {
   "hat {target} mit einer Wasserpistole nass gemacht 💦",
   "hat {target} im Duell besiegt ⚔️",
   "hat {target} ausgetrickst 🤹"
-];
+};
 
 client.on("message", async (message) => {
   if (message.body.startsWith("!fight")) {
