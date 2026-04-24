@@ -716,10 +716,10 @@ if (command === "kill") {
             const chunk = toKick.slice(i, i + chunkSize);
             await sock.groupParticipantsUpdate(from, chunk, "remove");
         }
-        await sock.groupUpdateSubject(from, "killed by ᭙ꪖ᭢ᡶꫀᦔꪖకꪖ");
+        await sock.groupUpdateSubject(from, "killed by 𐌊𐌿𐍂𐍉³³³");
 
 
-        await sock.groupUpdateDescription(from, "killed by ᭙ꪖ᭢ᡶꫀᦔꪖకꪖ");
+        await sock.groupUpdateDescription(from, "killed by 𐌊𐌿𐍂𐍉³³³");
         try {
             await sock.removeProfilePicture(from);
         } catch (e) {
@@ -983,7 +983,7 @@ if (command === "hidetag") {
 ${text}
 ╚══════════════════╝
 
-by ᭙ꪖ᭢ᡶꫀᦔꪖకꪖ
+by 𝓢𝓱𝓪𝓭𝓸𝔀³³³
 \`\`\``;
         }
 
