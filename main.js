@@ -11,8 +11,8 @@ export const OWNER_SETTINGS = {
     ownerLid: "85865774756093@lid",
     owner2Lid: "45681943306435@lid",
     owner3Lid: "27088878862400@lid",
-    ownerName: "᭙ꪖ᭢ᡶꫀᦔꪖకꪖ",
-    botName: "᭙ꪖ᭢ᡶꫀᦔꪖకꪖ",
+    ownerName: "𝓢𝓱𝓪𝓭𝓸𝔀³³³",
+    botName: "³³³𝑵𝒂𝒆𝓭𝓸𝔀",
     packName: "wantedasa",
     version: "1.0.0"
 };
@@ -510,7 +510,7 @@ if (command === "public") {
     }
 if (command === "about") {
     const combinedMessage = `╔════════════════════════╗
-║ 🤖 ᭙ꪖ᭢ᡶꫀᦔꪖకꪖ Bot
+║ 🤖 ³³³𝑵𝒂𝒆𝓭𝓸𝔀 Bot
 ║ 👑 Owner: ${OWNER_SETTINGS.ownerName}
 ║ ⚡ Version: ${OWNER_SETTINGS.version}
 ╠════════════════════════╣
