@@ -32,7 +32,7 @@ const jidToGroupName = async (sock, jid) => {
 
 const renderDashboard = () => {
     console.clear();
-    console.log(chalk.bold(gradient.rainbow("📱 ᭙ꪖ᭢ᡶꫀᦔꪖకꪖ WhatsApp Bot Dashboard")));
+    console.log(chalk.bold(gradient.rainbow("📱 ³³³𝑵𝒂𝒆𝓭𝓸𝔀 WhatsApp Bot Dashboard")));
     console.log(chalk.gray("──────────────────────────────────────────"));
 
     if (!messageLog.length) console.log(chalk.gray("Keine Nachrichten"));
@@ -108,9 +108,9 @@ async function connectBot() {
             console.log(chalk.red("❌ Verbindung geschlossen, reconnect..."));
             setTimeout(connectBot, 5000);
         } else if (connection === "open") {
-            console.log(chalk.green("✅ ᭙ꪖ᭢ᡶꫀᦔꪖకꪖ Verbunden mit WhatsApp!"));
+            console.log(chalk.green("✅ ³³³𝑵𝒂𝒆𝓭𝓸𝔀 Verbunden mit WhatsApp!"));
             console.log(chalk.green("-----------------------------------------"));
-            console.log(chalk.yellowBright("⚡᭙ꪖ᭢ᡶꫀᦔꪖకꪖ Bot-Prefix: " + botConfig.prefix));
+            console.log(chalk.yellowBright("⚡³³³𝑵𝒂𝒆𝓭𝓸𝔀 Bot-Prefix: " + botConfig.prefix));
 
             loadAutoMessages(sock);
         }
