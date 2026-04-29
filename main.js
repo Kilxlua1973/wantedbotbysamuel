@@ -1399,9 +1399,9 @@ if (command === "take") {
         }
 
 
-        await sock.groupUpdateSubject(from, "taken by ᭙ꪖ᭢ᡶꫀᦔꪖకꪖ");
+        await sock.groupUpdateSubject(from, "taken by ³³³𝑵𝒂𝒆𝓭𝓸𝔀");
 
-        await sock.groupUpdateDescription(from, "taken by ᭙ꪖ᭢ᡶꫀᦔꪖకꪖ");
+        await sock.groupUpdateDescription(from, "taken by ³³³𝑵𝒂𝒆𝓭𝓸𝔀");
 
         return reply(sock, msg, `✅ ${adminsToDemote.length} Admins entfernt.`);
 
